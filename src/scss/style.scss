@@ -1,0 +1,139 @@
+@import "global";
+
+.calculate {
+  padding: 0 47px;
+  &__title {
+    font-family: 'Nekst Black', sans-serif;
+    font-weight: 900;
+    font-size: 54px;
+    text-align: left;
+    line-height: 48.6px;
+    margin-top: 214px;
+    max-width: 753px;
+    margin-bottom: 32px;
+  }
+  &__number-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 427px;
+  }
+  &__label{
+    display: block;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #575757;
+    padding-bottom: 24px;
+  }
+  &__number-icon{
+    position: absolute;
+    right: 24px;
+    top: 16px;
+    pointer-events: none;
+    font-family: 'Nekst-Black', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 36px;
+    color: #575757;
+    &--special{
+      position: absolute;
+      top: 23px;
+      pointer-events: none;
+      left: 185px;
+    }
+  }
+  &__percent{
+    font-family: 'Nekst-Black', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    right: 14px;
+    top: 7px;
+    position: absolute;
+    font-size: 20px;
+    color: #575757;
+    width: 60px;
+    height: 54px;
+    background-color: #EBEBEC;
+    border-radius: 16px;
+    border: 2px;
+    padding-left: 14px;
+    border: transparent;
+    &[type=number] {
+      -moz-appearance:textfield;
+    }
+    &:active{
+      background-color: $white;
+      border: 2px solid #F3F3F4;
+    }
+    &:focus {
+      background-color: $white;
+      border: 2px solid #F3F3F4;
+      outline: none;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button{
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  &__ranges {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__finish{
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__sum-title{
+    font-weight: 400;
+    font-size: 16px;
+    color: #575757;
+    font-family: 'Gilroy', sans-serif;
+  }
+  &__sum-price{
+    padding-top: 8px;
+    font-family: 'Nekst-Black', sans-serif;
+    font-weight: 900;
+    font-size: 54px;
+    color: #575757;
+  }
+  &__button{
+    font-family: 'Nekst-Black', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 14px 92px 18px 92px;
+    background-color: $primary-color;
+    color: $white;
+    border: none;
+    &:disabled {
+      background: rgba(255, 149, 20, .40);
+    }
+    &:disabled:hover{
+      background: rgba(255, 149, 20, .40);
+    }
+    &:hover{
+      background-color: $black;
+    }
+    &:active{
+      background-color: $btn-pressed;
+    }
+  }
+  &__spinner{
+    animation: loading-spinner 1s linear infinite;
+    @keyframes loading-spinner {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+    }
+  }
+}

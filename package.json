@@ -1,0 +1,25 @@
+{
+  "name": "oxem-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.37",
+    "vue-percent-input": "^1.1.4",
+    "vue-range-component": "^1.0.3",
+    "vue-range-slider": "^0.6.0",
+    "vue-router": "^4.1.5",
+    "vue-simple-range-slider": "^1.0.0",
+    "vue-slider-component": "^4.1.0-beta.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.1.0",
+    "sass": "^1.55.0",
+    "vite": "^3.1.0"
+  }
+}
