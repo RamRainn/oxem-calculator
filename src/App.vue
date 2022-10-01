@@ -53,13 +53,6 @@
       </button>
     </div>
   </form>
-<!--  <div class="ui">-->
-<!--    <h1 class="ui__title">Кнопки</h1>-->
-<!--    <div class="ui__buttons">-->
-<!--      <button class="ui__button">Passive</button>-->
-<!--      <button class="ui__button_hover">Hover</button>-->
-<!--    </div>-->
-<!--  </div>-->
 </template>
 
 <script>
